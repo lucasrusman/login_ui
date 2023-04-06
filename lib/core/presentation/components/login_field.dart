@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:login_ui/pallete.dart';
+import 'package:login_ui/core/resources/app_colors.dart';
 
 class LoginField extends StatelessWidget {
   final String hintText;
@@ -14,20 +14,19 @@ class LoginField extends StatelessWidget {
           contentPadding: const EdgeInsets.all(27),
           enabledBorder: OutlineInputBorder(
             borderSide: const BorderSide(
-              color: Pallete.borderColor,
+              color: AppColors.borderColor,
               width: 3,
             ),
             borderRadius: BorderRadius.circular(10),
           ),
           focusedBorder: OutlineInputBorder(
             borderSide: const BorderSide(
-              color: Pallete.gradient2,
+              color: AppColors.gradient2,
               width: 3,
             ),
             borderRadius: BorderRadius.circular(10),
           ),
           hintText: hintText,
-          
         ),
       ),
     );

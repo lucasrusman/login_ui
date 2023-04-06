@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:login_ui/login_screen.dart';
-import 'package:login_ui/pallete.dart';
+import 'package:login_ui/auth/presentation/views/login_screen.dart';
+import 'package:login_ui/core/resources/app_colors.dart';
 
 void main() => runApp(const MyApp());
 
@@ -13,7 +13,7 @@ class MyApp extends StatelessWidget {
       title: 'Material App',
       debugShowCheckedModeBanner: false,
       theme: ThemeData.dark().copyWith(
-        scaffoldBackgroundColor: Pallete.backgroundColor,
+        scaffoldBackgroundColor: AppColors.backgroundColor,
       ),
       home: const LoginScreen(),
     );

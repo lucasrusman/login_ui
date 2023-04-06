@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
-import 'package:login_ui/pallete.dart';
+import 'package:login_ui/core/resources/app_colors.dart';
 
 class SocialButton extends StatelessWidget {
   final String iconPath;
@@ -23,18 +23,18 @@ class SocialButton extends StatelessWidget {
         iconPath,
         width: 25,
         colorFilter:
-            const ColorFilter.mode(Pallete.whiteColor, BlendMode.srcIn),
+            const ColorFilter.mode(AppColors.whiteColor, BlendMode.srcIn),
       ),
       label: Text(
         label,
-        style: const TextStyle(color: Pallete.whiteColor, fontSize: 17),
+        style: const TextStyle(color: AppColors.whiteColor, fontSize: 17),
       ),
       style: TextButton.styleFrom(
         padding:
             EdgeInsets.symmetric(vertical: 30, horizontal: horizontalPadding),
         shape: RoundedRectangleBorder(
           side: const BorderSide(
-            color: Pallete.borderColor,
+            color: AppColors.borderColor,
             width: 3,
           ),
           borderRadius: BorderRadius.circular(10),
